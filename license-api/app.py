@@ -2,9 +2,10 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
+# Example license list
 licenses = {
     "MY-FREE-KEY-001": None,
-    "TEST-KEY-123456": None
+    "TEST-KEY-123": None
 }
 
 @app.route('/validate', methods=['POST'])
